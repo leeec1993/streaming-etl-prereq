@@ -34,7 +34,7 @@ git clone https://github.com/leeec1993/streaming-etl-prereq.git
 
 ## <a name="step-1"></a>Step 1: Create a MongoDB Database
 
-1. Login to [mongoDB](https://account.mongodb.com/account/login)
+1. Login to [MongoDB](https://account.mongodb.com/account/login)
 
 1. Create a Shared (free) Cluster in the same cloud as you deployed your Confluent Cloud Cluster by following the steps [here](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)
 
@@ -173,7 +173,7 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 
 </div>
 
-1. Once the connector is up and running check that you see the new colelctions within your MongoDB Atlas database with dummy data populated
+1. Once the connector is up and running check that you see the new collections within your MongoDB Atlas database with dummy data populated
 
 ***
 
