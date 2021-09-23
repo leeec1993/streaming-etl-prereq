@@ -177,7 +177,7 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 
 ***
 
-## <a name="step-1"></a>Step 5: Create a BigQuery Table
+## <a name="step-1"></a>Step 5: Create a BigQuery Dataset
 
 1. Go to BigQuery within your GCP console [here](https://console.cloud.google.com/bigquery?_ga=2.241204674.1935688351.1632341687-286332623.1612459805)
 
