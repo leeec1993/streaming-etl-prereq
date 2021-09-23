@@ -36,7 +36,7 @@ git clone https://github.com/leeec1993/streaming-etl-prereq.git
 
 1. Login to [MongoDB](https://account.mongodb.com/account/login)
 
-1. Create a Shared (free) Cluster in the same cloud as you deployed your Confluent Cloud Cluster by following the steps [here](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)
+1. Create a Shared (free) Cluster by following the steps [here](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)
 
 ***
 
