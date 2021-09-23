@@ -173,7 +173,7 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 
 </div>
 
-1. Once the connector is up and running check that you see the new collections within your MongoDB Atlas database with dummy data populated
+1. Once the connector is up and running check that you see the new **clicks** and **transactions** collections within your MongoDB Atlas database with dummy data populated
 
 ***
 
