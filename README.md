@@ -65,7 +65,7 @@ git clone https://github.com/leeec1993/streaming-etl-prereq.git
 
 We will be using local Datagen connectors to populate the Dummy data that will used for the workshop
 
-1. Create a `.env` file that includes the MongoDB and Confluent Cloud credentials in it - see `.env.example` for a template.
+1. Create a `.env` file that includes the Confluent Cloud credentials in it - see `.env.example` for a template.
 
 1. Create the local connect instance
 ```
