@@ -15,7 +15,7 @@ This setup guide will be walking you through the setup for the [Getting Started 
 
 ## **Prerequisites**
 
-1. Have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed and Git clone this repo
+1. Have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed and Git clone this repo
 ```
 git clone https://github.com/leeec1993/streaming-etl-prereq.git
 ```
