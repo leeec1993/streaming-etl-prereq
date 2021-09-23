@@ -181,7 +181,16 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 
 1. Go to BigQuery within your GCP console [here](https://console.cloud.google.com/bigquery?_ga=2.241204674.1935688351.1632341687-286332623.1612459805)
 
-2. Create a dataset (i.e. workshop) to be used for the workshop by following the instructions [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
+1. Create a dataset (i.e. workshop) to be used for the workshop by following the instructions [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
+
+1. Create a Service Account within GCP that has the BigQuery Data Editor role.  [Instructions](https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating) on creating a Service Account
+
+1. [Create a JSON key for the Service Account](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys)
+
+1. Save the JSON file
+> **Note:** If you are a Confluent Solutions Engineer presenting the workshop you can upload the file [here](https://drive.google.com/drive/folders/1EOYZkyWvpnCydBCv2hv8DMH8FlZKuXKV)
+
+1. Note down the GCP Project ID and name of Dataset that you just created as you will need require those during the workshop
 
 ***
 
