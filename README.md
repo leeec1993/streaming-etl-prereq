@@ -181,7 +181,7 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 
 1. Go to BigQuery within your GCP console [here](https://console.cloud.google.com/bigquery?_ga=2.241204674.1935688351.1632341687-286332623.1612459805)
 
-2. Create a dataset (i.e. etl_workshop) to be used for the workshop by following the instructions [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
+2. Create a dataset (i.e. workshop) to be used for the workshop by following the instructions [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
 
 ***
 
