@@ -30,6 +30,8 @@ git clone https://github.com/leeec1993/streaming-etl-prereq.git
 
 1. [Install MongoDB Database Tools](https://docs.mongodb.com/database-tools/installation/installation/)
 
+1. [jq](https://stedolan.github.io/jq/download/) installed (optional- used for checking connect status)
+
 ***
 
 ## <a name="step-1"></a>Step 1: Create a MongoDB Database
@@ -146,7 +148,7 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 2021-04-07T16:00:29.561+0100    3 document(s) imported successfully. 0 document(s) failed to import.
 ```
 
-1. Check within your MongoDB Atlas UI that a new **demo** database was created with an **inventory** collection populated with dummy data
+1. Check within your MongoDB Atlas UI that a new **abc** database was created with an **inventory** collection populated with dummy data
 
 ***
 
@@ -168,7 +170,7 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 | Connection host    | (i.e. cluster0.abc123.mongodb.net)          |
 | Connection user    | dbUser         |
 | Connection password    | MONGODB_PW          |
-| Database name    | demo         |
+| Database name    | abc         |
 | Tasks    | 1             |
 
 </div>
