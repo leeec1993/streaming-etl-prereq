@@ -69,11 +69,11 @@ We will be using local Datagen connectors to populate the Dummy data that will u
 
 1. Create a `.env` file that includes the Confluent Cloud credentials in it - see `.env.example` for a template.
 
-1. Create the local connect instance
+2. Create the local connect instance
 ```
 docker-compose up -d
 ```
-1. Check that your connect instance is up and running
+3. Check that your connect instance is up and running
 ```
 docker exec -it kafka-connect bash -c 'echo -e "\n\n  Waiting for Kafka Connect to be available\n"; while : ; do curl_status=$(curl -s -o /dev/null -w %{http_code} http://localhost:8083/connectors) ; echo -e $(date) " Kafka Connect HTTP state: " $curl_status " (waiting for 200)" ; if [ $curl_status -eq 200 ] ; then  break ; fi ; sleep 5 ; done '
 curl -s localhost:8083/connector-plugins|jq '.[].class'
@@ -87,7 +87,7 @@ Thu Sep 23 04:55:30 UTC 2021  Kafka Connect HTTP state:  404  (waiting for 200)
 Thu Sep 23 04:55:35 UTC 2021  Kafka Connect HTTP state:  200  (waiting for 200)
 ```
 
-1. Create the DataGen Connectors
+4. Create the DataGen Connectors
 ```
 curl -i -X PUT -H  "Content-Type:application/json" \
     http://localhost:8083/connectors/datagen-abc-clicks/config \
@@ -125,7 +125,7 @@ curl -i -X PUT -H  "Content-Type:application/json" \
       }'
 ```
 
-1. Check that both connectors are up and running
+5. Check that both connectors are up and running
 ```
 curl -s "http://localhost:8083/connectors?expand=info&expand=status" | \
          jq '. | to_entries[] | [ .value.info.type, .key, .value.status.connector.state,.value.status.tasks[].state,.value.info.config."connector.class"]|join(":|:")' | \
@@ -135,7 +135,7 @@ curl -s "http://localhost:8083/connectors?expand=info&expand=status" | \
 source  |  datagen-abc-clicks        |  RUNNING  |  RUNNING  |  io.confluent.kafka.connect.datagen.DatagenConnector
 source  |  datagen-abc-transactions  |  RUNNING  |  RUNNING  |  io.confluent.kafka.connect.datagen.DatagenConnector
 ```
-1.  Import Products Data directly into your MonogoDB database
+6.  Import Products Data directly into your MonogoDB database
 ```
 mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
             --collection inventory \
@@ -148,7 +148,7 @@ mongoimport --uri mongodb+srv://dbUser:MONGODB_PW@MONGODB_ENDPOINT/abc \
 2021-04-07T16:00:29.561+0100    3 document(s) imported successfully. 0 document(s) failed to import.
 ```
 
-1. Check within your MongoDB Atlas UI that a new **abc** database was created with an **inventory** collection populated with dummy data
+7. Check within your MongoDB Atlas UI that a new **abc** database was created with an **inventory** collection populated with dummy data
 
 ***
 
